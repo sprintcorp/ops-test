@@ -1,0 +1,36 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+rule_files:
+  # - "first_rules.yml"
+  # - "second_rules.yml"
+
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  - job_name: 'DemOne'
+    static_configs:
+      - targets: ['localhost:3000']
+    metrics_path: /metrics
+    scrape_interval: 10s
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          # - alertmanager:9093
+
+rule_groups:
+  - name: example
+    rules:
+      - alert: HighRequestLatency
+        expr: http_request_duration_seconds > 0.5
+        for: 0m
+        labels:
+          severity: page
+        annotations:
+          summary: High request latency
+          description: "Request latency is above 0.5s"

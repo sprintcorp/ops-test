@@ -1,0 +1,51 @@
+# Docker Compose Configuration
+# Generated for DemOne
+
+tool:
+  name: Docker Compose
+  version: 2.20+
+  category: Infrastructure
+
+project:
+  name: DemOne
+  description: DevOps project generated with NoCodeDevOps
+  author: Fred
+  version: 1.0.0
+  repository: https://github.com/sprintcorp/ops-test
+
+configuration:
+  # Add your Docker Compose configuration here
+  # Refer to the tool's documentation for available options
+  
+examples:
+  - name: Web Stack
+    description: Nginx + Node.js + PostgreSQL stack
+    config: {
+    "version": "3.8",
+    "services": {
+        "nginx": {
+            "image": "nginx:alpine",
+            "ports": [
+                "80:80"
+            ]
+        },
+        "app": {
+            "image": "node:18",
+            "ports": [
+                "3000:3000"
+            ]
+        },
+        "db": {
+            "image": "postgres:15",
+            "environment": {
+                "POSTGRES_DB": "app"
+            }
+        }
+    }
+}
+
+best_practices:
+  - Use environment variables for configuration
+  - Implement proper health checks
+  - Use named volumes for persistence
+  - Set resource limits for services

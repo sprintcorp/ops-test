@@ -1,0 +1,52 @@
+# GitHub Actions Configuration Template
+# Generated on: 2025-08-19T15:17:14.483Z
+# Tool: GitHub Actions (latest)
+# Category: CI/CD
+# Primary Function: CI/CD Pipeline Automation
+
+# =============================================================================
+# CONFIGURATION SECTION - Edit the values below according to your needs
+# =============================================================================
+
+# Workflow Configuration
+workflow: your-value-here
+
+# Triggers Configuration
+triggers: your-value-here
+
+# Environments Configuration
+environments: your-value-here
+
+# =============================================================================
+# DEPENDENCIES
+# =============================================================================
+# This tool depends on: None
+
+# =============================================================================
+# BEST PRACTICES
+# =============================================================================
+# - Use reusable workflows for common tasks
+# - Implement proper secret management
+# - Add status checks and approvals for production
+# - Use matrix builds for multiple versions
+
+# =============================================================================
+# EXAMPLES
+# =============================================================================
+# Node.js CI/CD: Basic Node.js application with testing and deployment
+# Example config:
+# {
+  "workflow": {
+    "name": "Node.js CI/CD"
+  },
+  "triggers": {
+    "push": true,
+    "pull_request": true
+  },
+  "environments": {
+    "production": {
+      "url": "https://app.example.com"
+    }
+  }
+}
+

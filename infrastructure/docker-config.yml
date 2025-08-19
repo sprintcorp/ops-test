@@ -1,0 +1,66 @@
+# Docker Configuration Template
+# Generated on: 2025-08-19T15:17:14.483Z
+# Tool: Docker (24.0+)
+# Category: Infrastructure
+# Primary Function: Container Build & Packaging
+
+# =============================================================================
+# CONFIGURATION SECTION - Edit the values below according to your needs
+# =============================================================================
+
+# BaseImage Configuration
+baseImage: "your-value-here"
+
+# Packages Configuration
+packages:
+  # Add your packages items here
+  # - item1
+  # - item2
+
+# Dependencies Configuration
+dependencies:
+  # Add your dependencies items here
+  # - item1
+  # - item2
+
+# Ports Configuration
+ports:
+  # Add your ports items here
+  # - item1
+  # - item2
+
+# Volumes Configuration
+volumes:
+  # Add your volumes items here
+  # - item1
+  # - item2
+
+# =============================================================================
+# DEPENDENCIES
+# =============================================================================
+# This tool depends on: None
+
+# =============================================================================
+# BEST PRACTICES
+# =============================================================================
+# - Use multi-stage builds for smaller images
+# - Implement proper layer caching
+# - Use .dockerignore to exclude files
+# - Run containers as non-root user
+
+# =============================================================================
+# EXAMPLES
+# =============================================================================
+# Node.js Application: Multi-stage Node.js application build
+# Example config:
+# {
+  "baseImage": "node:18-alpine",
+  "packages": [
+    "git",
+    "python3"
+  ],
+  "ports": [
+    3000
+  ]
+}
+

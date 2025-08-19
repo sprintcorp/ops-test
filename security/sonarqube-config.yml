@@ -1,0 +1,56 @@
+# SonarQube Configuration Template
+# Generated on: 2025-08-19T15:17:14.483Z
+# Tool: SonarQube (10.0+)
+# Category: Security
+# Primary Function: Security & Compliance
+
+# =============================================================================
+# CONFIGURATION SECTION - Edit the values below according to your needs
+# =============================================================================
+
+# Server Configuration
+server:
+  # Add your server configuration here
+
+# Database Configuration
+database:
+  # Add your database configuration here
+
+# Quality_gates Configuration
+quality_gates:
+  # Add your quality_gates configuration here
+
+# Rules Configuration
+rules:
+  # Add your rules items here
+  # - item1
+  # - item2
+
+# =============================================================================
+# DEPENDENCIES
+# =============================================================================
+# This tool depends on: None
+
+# =============================================================================
+# BEST PRACTICES
+# =============================================================================
+# - Set up quality gates
+# - Configure branch analysis
+# - Use project-specific rules
+# - Integrate with CI/CD pipeline
+
+# =============================================================================
+# EXAMPLES
+# =============================================================================
+# Java Project Analysis: SonarQube configuration for Java project
+# Example config:
+# {
+  "server": {
+    "port": 9000
+  },
+  "quality_gates": {
+    "coverage": 80,
+    "duplications": 3
+  }
+}
+

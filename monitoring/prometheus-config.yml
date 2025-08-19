@@ -1,0 +1,59 @@
+# Prometheus Configuration Template
+# Generated on: 2025-08-19T15:17:14.483Z
+# Tool: Prometheus (2.45+)
+# Category: Monitoring
+# Primary Function: Monitoring & Observability
+
+# =============================================================================
+# CONFIGURATION SECTION - Edit the values below according to your needs
+# =============================================================================
+
+# Global Configuration
+global:
+  # Add your global configuration here
+
+# Rule_files Configuration
+rule_files:
+  # Add your rule_files items here
+  # - item1
+  # - item2
+
+# Scrape_configs Configuration
+scrape_configs:
+  # Add your scrape_configs items here
+  # - item1
+  # - item2
+
+# Alerting Configuration
+alerting:
+  # Add your alerting configuration here
+
+# =============================================================================
+# DEPENDENCIES
+# =============================================================================
+# This tool depends on: None
+
+# =============================================================================
+# BEST PRACTICES
+# =============================================================================
+# - Use proper labeling strategy
+# - Implement alerting rules
+# - Use service discovery when possible
+# - Monitor key business metrics
+
+# =============================================================================
+# EXAMPLES
+# =============================================================================
+# Basic Monitoring: Monitor Node.js application metrics
+# Example config:
+# {
+  "global": {
+    "scrape_interval": "15s"
+  },
+  "scrape_configs": [
+    {
+      "job_name": "nodejs-app"
+    }
+  ]
+}
+

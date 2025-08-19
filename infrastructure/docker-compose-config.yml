@@ -1,0 +1,67 @@
+# Docker Compose Configuration Template
+# Generated on: 2025-08-19T15:17:14.483Z
+# Tool: Docker Compose (2.20+)
+# Category: Infrastructure
+# Primary Function: Multi-Container Orchestration
+
+# =============================================================================
+# CONFIGURATION SECTION - Edit the values below according to your needs
+# =============================================================================
+
+# Version Configuration
+version: "your-value-here"
+
+# Services Configuration
+services:
+  # Add your services configuration here
+
+# Networks Configuration
+networks:
+  # Add your networks configuration here
+
+# Volumes Configuration
+volumes:
+  # Add your volumes configuration here
+
+# =============================================================================
+# DEPENDENCIES
+# =============================================================================
+# This tool depends on: docker
+
+# =============================================================================
+# BEST PRACTICES
+# =============================================================================
+# - Use environment variables for configuration
+# - Implement proper health checks
+# - Use named volumes for persistence
+# - Set resource limits for services
+
+# =============================================================================
+# EXAMPLES
+# =============================================================================
+# Web Stack: Nginx + Node.js + PostgreSQL stack
+# Example config:
+# {
+  "version": "3.8",
+  "services": {
+    "nginx": {
+      "image": "nginx:alpine",
+      "ports": [
+        "80:80"
+      ]
+    },
+    "app": {
+      "image": "node:18",
+      "ports": [
+        "3000:3000"
+      ]
+    },
+    "db": {
+      "image": "postgres:15",
+      "environment": {
+        "POSTGRES_DB": "app"
+      }
+    }
+  }
+}
+

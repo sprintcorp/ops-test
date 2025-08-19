@@ -1,0 +1,37 @@
+# SonarQube Configuration
+# Generated for DemOne
+
+tool:
+  name: SonarQube
+  version: 10.0+
+  category: Security
+
+project:
+  name: DemOne
+  description: DevOps project generated with NoCodeDevOps
+  author: Fred
+  version: 1.0.0
+  repository: https://github.com/sprintcorp/ops-test
+
+configuration:
+  # Add your SonarQube configuration here
+  # Refer to the tool's documentation for available options
+  
+examples:
+  - name: Java Project Analysis
+    description: SonarQube configuration for Java project
+    config: {
+    "server": {
+        "port": 9000
+    },
+    "quality_gates": {
+        "coverage": 80,
+        "duplications": 3
+    }
+}
+
+best_practices:
+  - Set up quality gates
+  - Configure branch analysis
+  - Use project-specific rules
+  - Integrate with CI/CD pipeline
