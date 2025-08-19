@@ -51,17 +51,6 @@ Multi-container Docker applications
 # Refer to official documentation: https://docs.docker.com/compose/
 ```
 
-**Docker**
-
-Containerization platform
-
-```bash
-# Install Docker
-curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sh get-docker.sh
-sudo usermod -aG docker $USER
-```
-
 #### Monitoring
 
 **Prometheus**
@@ -104,7 +93,7 @@ cd DemOne
 
 ```bash
 # Navigate to tool directory
-cd ci-cd
+cd .github/workflows
 
 # Apply configuration
 # Follow tool-specific deployment steps in the README
@@ -113,16 +102,6 @@ cd ci-cd
 #### Infrastructure
 
 **Docker Compose**
-
-```bash
-# Navigate to tool directory
-cd infrastructure
-
-# Apply configuration
-# Follow tool-specific deployment steps in the README
-```
-
-**Docker**
 
 ```bash
 # Navigate to tool directory
@@ -201,5 +180,5 @@ cd security
 - **Community:** Join relevant tool communities and forums
 
 ---
-*Generated on: 2025-08-19T15:17:14.484Z*
-*Total tools: 5*
+*Generated on: 2025-08-19T15:58:16.803Z*
+*Total tools: 4*
