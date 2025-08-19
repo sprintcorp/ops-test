@@ -9,7 +9,7 @@ This document provides a detailed breakdown of the project structure and the pur
 - `README.md` - Main project documentation and setup guide
 - `project-structure.md` - This file, detailed project structure
 
-### `ci-cd/` - CI/CD
+### `.github/workflows/` - CI/CD
 
 This directory contains configuration files for ci/cd tools:
 
@@ -17,7 +17,7 @@ This directory contains configuration files for ci/cd tools:
 - **Purpose:** CI/CD Pipeline Automation
 - **Files:**
   - `github-actions.yaml` - Generated configuration
-  - `github-actions-config.yml` - Editable configuration template
+  - `ci-cd.yml` - GitHub Actions workflow configuration
 - **Description:** Automate your workflow from idea to production
 
 
@@ -32,14 +32,6 @@ This directory contains configuration files for infrastructure tools:
   - `docker-compose.docker-compose` - Generated configuration
   - `docker-compose-config.yml` - Editable configuration template
 - **Description:** Multi-container Docker applications
-
-#### Docker
-- **Purpose:** Container Build & Packaging
-- **Files:**
-  - `docker.dockerfile` - Generated configuration
-  - `docker.docker-compose` - Generated configuration
-  - `docker-config.yml` - Editable configuration template
-- **Description:** Containerization platform
 
 
 ### `monitoring/` - Monitoring
@@ -95,6 +87,6 @@ After reviewing this structure:
 5. Document any environment-specific changes
 
 ---
-*Generated on: 2025-08-19T15:17:14.484Z*
-*Total tools: 5*
+*Generated on: 2025-08-19T15:58:16.786Z*
+*Total tools: 4*
 *Categories: 4*
